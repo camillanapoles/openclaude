@@ -390,7 +390,7 @@ const externalTips: Tip[] = [
   {
     id: 'custom-commands',
     content: async () =>
-      'Create skills by adding .md files to .claude/skills/ in your project or ~/.claude/skills/ for skills that work in any project',
+      'Create skills at .claude/skills/<name>/SKILL.md in your project or ~/.openclaude/skills/<name>/SKILL.md for skills that work in any project',
     cooldownSessions: 15,
     async isRelevant() {
       const config = getGlobalConfig()
@@ -457,13 +457,6 @@ const externalTips: Tip[] = [
     id: 'web-app',
     content: async () =>
       'Run tasks in the cloud while you keep coding locally · /web',
-    cooldownSessions: 15,
-    isRelevant: async () => true,
-  },
-  {
-    id: 'mobile-app',
-    content: async () =>
-      '/mobile to continue from your phone',
     cooldownSessions: 15,
     isRelevant: async () => true,
   },
@@ -617,7 +610,7 @@ const externalTips: Tip[] = [
   },
   {
     id: 'feedback-command',
-    content: async () => 'Use /feedback to help us improve!',
+    content: async () => 'Report bugs or feature requests in the issue tracker to help us improve.',
     cooldownSessions: 15,
     async isRelevant() {
       const config = getGlobalConfig()
