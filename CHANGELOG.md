@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.1](https://github.com/Gitlawb/openclaude/compare/v0.11.0...v0.11.1) (2026-05-15)
+
+
+### Bug Fixes
+
+* **openai-shim:** surface in-stream errors and truncation hints ([#1174](https://github.com/Gitlawb/openclaude/issues/1174)) ([6174d75](https://github.com/Gitlawb/openclaude/commit/6174d75e983e80601ba369a595d7b64580e3bd51))
+* Reduce stable stringify heap usage ([#1104](https://github.com/Gitlawb/openclaude/issues/1104)) ([c433d20](https://github.com/Gitlawb/openclaude/commit/c433d20fdc5666736c800a942bbcc0f0d85cc296))
+
 ## [0.11.0](https://github.com/Gitlawb/openclaude/compare/v0.10.0...v0.11.0) (2026-05-14)
 
 
